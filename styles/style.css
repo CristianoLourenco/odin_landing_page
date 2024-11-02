@@ -1,3 +1,5 @@
+
+/* Default configuration */
 *{
     padding: 0;
     margin: 0;
@@ -5,3 +7,13 @@
     text-decoration: none;
     box-sizing: border-box;
   }
+
+  /* Custom color configuration */
+  :root {
+    --dark_blue: hsl(215, 28%, 17%);
+    --light_white: hsl(220, 13%, 91%);
+    --cinza-lilas: hsl(221, 30%, 39%);
+    --white: hsl(90, 17%, 98%);
+    --blue:hsl(217, 91%, 59%);
+  }
+  
