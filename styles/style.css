@@ -10,10 +10,58 @@
 
   /* Custom color configuration */
   :root {
-    --dark_blue: hsl(215, 28%, 17%);
-    --light_white: hsl(220, 13%, 91%);
-    --cinza-lilas: hsl(221, 30%, 39%);
-    --white: hsl(90, 17%, 98%);
-    --blue:hsl(217, 91%, 59%);
+    --dark_blue: #1f2937;
+    --light_white: #e5e7eb;
+    --cinza-lilas: #465981;
+    --white: #f9faf8;
+    --blue:#3780f6;
+    --padding:  0 12rem;
   }
   
+  html{
+    scroll-behavior: smooth;
+    font-family: roboto;
+    overflow-x: hidden;
+} 
+
+/* ===========  Header  =============== */
+header{
+    padding: var(--padding);
+    width: 100%;
+    min-height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--dark_blue);
+  }
+
+  header div.logo h2{
+    font-size: 1.5rem;
+    color: var(--white);
+  }
+
+  header .links ul{
+    display: flex;
+    gap: 1.125rem;
+  }
+
+  .links ul li a{
+    color: var(--light_white);
+  }
+
+/* ============= Hero/Banner ================ */
+section.banner{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: var(--padding);
+
+}
+section.banner div.header_content .text{
+   justify-content: left;
+   align-items: stretch;
+   flex-direction: row;
+}
+section.banner div.image_header img {
+    width: 50%;
+}
